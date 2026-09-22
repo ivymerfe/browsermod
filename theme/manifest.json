@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Darkmod",
+  "version": "1.0",
+  "theme": {
+    "colors": {
+      "frame": [5, 5, 5],
+      "frame_inactive": [5, 5, 5],
+      "background_tab": [5, 5, 5],
+      "background_tab_inactive": [5, 5, 5],
+      "ntp_background": [20, 20, 20],
+      "button_background": [5, 5, 5],
+      "omnibox_background": [20, 20, 20],
+      "popup": [5, 5, 5],
+      "control_background": [5, 5, 5],
+      "toolbar": [20, 20, 20],
+      "toolbar_field": [30, 30, 30],
+      "toolbar_field_text": [235, 235, 235],
+      "ntp_text": [235, 235, 235],
+      "tab_text": [235, 235, 235],
+      "tab_background_text": [235, 235, 235],
+      "bookmark_text": [235, 235, 235]
+    },
+    "tints": {
+      "background_tab": [0.0, 0.0, 0.6],
+      "buttons": [0.0, 0.0, 0.6],
+      "frame": [0.0, 0.0, 0.6],
+      "frame_inactive": [0.0, 0.0, 0.6],
+      "frame_incognito": [0.0, 0.0, 0.6],
+      "frame_incognito_inactive": [0.0, 0.0, 0.6]
+    }
+  }
+}

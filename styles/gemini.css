@@ -1,0 +1,67 @@
+:where(.theme-host):where(.enable-lm-spacing-tokens) {
+  --gem-sys-shape--corner-extra-large-max: 16px !important;
+  --gem-sys-spacing--xs: 4px !important;
+  --gem-sys-spacing--s: 8px !important;
+  --gem-sys-spacing--m: 10px !important;
+  --gem-sys-spacing--l: 12px !important;
+  --gem-sys-spacing--xl: 14px !important;
+  --gem-sys-spacing--xxl: 16px !important;
+  --gem-sys-spacing--xxxl: 18px !important;
+}
+
+.hallucination-disclaimer {
+  display: none !important;
+}
+
+g1-dynamic-upsell-button {
+  display: none !important;
+}
+
+location-footer {
+  display: none !important;
+}
+
+.conversation-container {
+  max-width: 100% !important;
+}
+
+user-query {
+  max-width: 100% !important;
+}
+
+.input-area-container {
+  max-width: 100% !important;
+}
+
+input-container {
+  position: absolute !important;
+  bottom: 0 !important;
+}
+
+input-container:before {
+  display: none !important;
+}
+
+#chat-history infinite-scroller {
+  gap: 0;
+}
+
+#chat-history infinite-scroller > :last-child {
+  padding-bottom: 84px !important;
+}
+
+table-block > div {
+  max-width: fit-content !important;
+}
+
+.table-footer {
+  display: none !important;
+}
+
+.md-content {
+  padding: 0 2rem !important;
+}
+
+.md-content > * {
+  max-width: 100% !important;
+}

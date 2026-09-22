@@ -1,0 +1,46 @@
+[data-autoscroll-container="true"] > div > div {
+  padding-inline: 0 !important;
+}
+
+[data-testid="chat-column"] {
+  max-width: 100% !important;
+}
+
+[data-testid="transcript-list"] {
+  max-width: 100% !important;
+}
+
+[data-chat-input-container="true"] {
+  margin-inline: 2rem;
+  width: auto;
+}
+
+[data-disclaimer="true"] {
+  display: none !important;
+}
+
+.df-header-backdrop {
+  display: none !important;
+}
+
+[data-testid="transcript-bottom-fade"] {
+  display: none !important;
+}
+
+[data-cds="ChatComposer"] {
+  position: relative !important;
+  margin-bottom: 1rem !important;
+}
+
+[data-cds="ChatComposerChin"] {
+  position: absolute !important;
+  z-index: 1 !important;
+  top: -2.5rem !important;
+  width: 100% !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+[data-cds="ModelSelector"] {
+  background-color: var(--cds-page-bg) !important;
+}

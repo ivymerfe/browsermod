@@ -1,0 +1,77 @@
+{
+  "manifest_version": 3,
+  "name": "Browsermod",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "storage",
+    "commands",
+    "tabGroups",
+    "activeTab",
+    "scripting"
+  ],
+  "commands": {
+    "new_tab": {
+      "description": "Open new tab"
+    },
+    "toggle_group": {
+      "description": "Toggle primary group"
+    },
+    "popup_window": {
+      "description": "Move tab to new window"
+    },
+    "copy_content": {
+      "description": "Copy page text to clipboard"
+    }
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["common/patch.js"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_origin_as_fallback": true,
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://gemini.google.com/*",
+        "https://chat.deepseek.com/*",
+        "https://claude.ai/*"
+      ],
+      "js": ["common/autofocus.js", "common/keyboard_scroll.js"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["https://chatgpt.com/*"],
+      "css": ["styles/chatgpt.css"],
+      "js": ["content/chatgpt.js"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["https://gemini.google.com/*"],
+      "css": ["styles/gemini.css"],
+      "js": ["content/gemini.js"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["https://chat.deepseek.com/*"],
+      "css": ["styles/deepseek.css"],
+      "js": ["content/deepseek.js"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["https://claude.ai/*"],
+      "css": ["styles/claude.css"],
+      "js": ["content/claude.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

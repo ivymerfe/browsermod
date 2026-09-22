@@ -1,0 +1,47 @@
+#page-header {
+  background: transparent !important;
+  height: auto !important;
+  box-shadow: none !important;
+}
+
+[data-testid="model-switcher-dropdown-button"] {
+  display: none !important;
+}
+
+#page-header .lg\:block {
+  display: none !important;
+}
+
+.\[--sticky-padding-top\:var\(--header-height\)\] {
+  --sticky-padding-top: 0 !important;
+}
+
+.\[view-transition-name\:var\(--vt-disclaimer\)\] {
+  display: none !important;
+}
+
+.text-base {
+  padding-inline: 0 !important;
+  margin-inline: 1rem !important;
+}
+
+.\[--thread-content-max-width\:40rem\] {
+  margin: 0 !important;
+  max-width: 100% !important;
+}
+
+.markdown p {
+  margin-block: 0rem !important;
+}
+
+.markdown-new-styling p {
+  margin-block: 0rem !important;
+}
+
+.markdown hr {
+  margin-block: 1rem !important;
+}
+
+.markdown-new-styling hr {
+  margin-block: 1rem !important;
+}
