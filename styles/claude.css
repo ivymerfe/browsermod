@@ -41,6 +41,14 @@
   box-shadow: none !important;
 }
 
+[data-cds="ChatComposerChin"] .group\/chin-trail {
+  display: none !important;
+}
+
+[data-cds="ChatComposerChin"] .ms-auto {
+  margin-inline-start: 0 !important;
+}
+
 [data-cds="ModelSelector"] {
   background-color: var(--cds-page-bg) !important;
 }
