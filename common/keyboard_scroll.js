@@ -1,5 +1,5 @@
 (function () {
-  const SCROLL_SPEED = 22;
+  const SCROLL_SPEED = 14;
   const KEY_UP = "KeyD";
   const KEY_DOWN = "KeyF";
 
@@ -44,7 +44,7 @@
   window.addEventListener(
     "keydown",
     function (e) {
-      const special = (e.ctrlKey || e.altKey) && !e.shiftKey;
+      const special = (e.ctrlKey || e.altKey || e.metaKey) && !e.shiftKey;
       if (special && e.code === KEY_UP) {
         if (!e.repeat) {
           directionUp = 1;
@@ -68,7 +68,7 @@
   window.addEventListener(
     "keyup",
     function (e) {
-      const special = (e.ctrlKey || e.altKey) && !e.shiftKey;
+      const special = (e.ctrlKey || e.altKey || e.metaKey) && !e.shiftKey;
       if (special && e.code === KEY_UP) {
         directionUp = 0;
         updateScrolling();
@@ -81,7 +81,7 @@
         e.preventDefault();
         e.stopImmediatePropagation();
       }
-      if (!e.ctrlKey && !e.altKey) {
+      if (!e.ctrlKey && !e.altKey && !e.metaKey) {
         directionUp = 0;
         directionDown = 0;
         updateScrolling();
