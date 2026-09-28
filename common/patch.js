@@ -67,33 +67,33 @@
     //   },
     // },
   };
-  injectObjects(window, patchedObjects);
+  // injectObjects(window, patchedObjects);
 
-  window.addEventListener(
-    "focus",
-    (e) => {
-      if (e.target === window) {
-        e.stopImmediatePropagation();
-      }
-    },
-    true,
-  );
+  // window.addEventListener(
+  //   "focus",
+  //   (e) => {
+  //     if (e.target === window) {
+  //       e.stopImmediatePropagation();
+  //     }
+  //   },
+  //   true,
+  // );
 
-  window.addEventListener(
-    "blur",
-    (e) => {
-      if (e.target === window) {
-        e.stopImmediatePropagation();
-      }
-    },
-    true,
-  );
+  // window.addEventListener(
+  //   "blur",
+  //   (e) => {
+  //     if (e.target === window) {
+  //       e.stopImmediatePropagation();
+  //     }
+  //   },
+  //   true,
+  // );
 
-  window.addEventListener(
-    "visibilitychange",
-    (e) => {
-      e.stopImmediatePropagation();
-    },
-    true,
-  );
+  // window.addEventListener(
+  //   "visibilitychange",
+  //   (e) => {
+  //     e.stopImmediatePropagation();
+  //   },
+  //   true,
+  // );
 })();
