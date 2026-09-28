@@ -35,20 +35,25 @@
 [data-cds="ChatComposerChin"] {
   position: absolute !important;
   z-index: 1 !important;
-  top: -2.5rem !important;
+  left: -5rem !important;
+  bottom: 0 !important;
   width: 100% !important;
+  height: 100% !important;
   background: none !important;
   box-shadow: none !important;
+  pointer-events: none !important;
+  padding: 0 !important;
 }
 
-[data-cds="ChatComposerChin"] .group\/chin-trail {
-  display: none !important;
+[data-cds="ChatComposerChin"] .grid {
+  height: 100% !important;
+}
+
+[data-cds="ChatComposerChin"] [data-touch-size] {
+  height: 100% !important;
+  margin: 0 !important;
 }
 
 [data-cds="ChatComposerChin"] .ms-auto {
-  margin-inline-start: 0 !important;
-}
-
-[data-cds="ModelSelector"] {
-  background-color: var(--cds-page-bg) !important;
+  pointer-events: auto !important;
 }
