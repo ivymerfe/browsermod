@@ -36,22 +36,13 @@
   position: absolute !important;
   z-index: 1 !important;
   left: -5rem !important;
-  bottom: 0 !important;
+  top: -2rem !important;
   width: 100% !important;
   height: 100% !important;
   background: none !important;
   box-shadow: none !important;
   pointer-events: none !important;
   padding: 0 !important;
-}
-
-[data-cds="ChatComposerChin"] .grid {
-  height: 100% !important;
-}
-
-[data-cds="ChatComposerChin"] [data-touch-size] {
-  height: 100% !important;
-  margin: 0 !important;
 }
 
 [data-cds="ChatComposerChin"] .ms-auto {

@@ -50,10 +50,10 @@ input-container:before {
   padding-bottom: 84px !important;
 }
 
-table-block > div {
+/* table-block > div {
   max-width: fit-content !important;
-}
-
+} */
+ 
 .table-footer {
   display: none !important;
 }
