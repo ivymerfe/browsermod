@@ -2,7 +2,7 @@
   window.addEventListener(
     "keydown",
     function (e) {
-      const justKey = !e.altKey && !e.ctrlKey && !e.metaKey;
+      const justKey = !e.altKey && !e.ctrlKey && !e.metaKey && e.key != "Shift";
       const isPaste = (e.ctrlKey || e.metaKey) && e.code === "KeyV";
       if (justKey || isPaste) {
         if (
